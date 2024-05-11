@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{ background: url("./assests/images/coffe..jpeg");
+    height: 100vh ;
+    background-size: contain;
+        }
+    
+   
+        body{
+            background-color: rgb(42, 48, 48);
+        }    
+        
+        div{
+            width: 500px;
+            height: 500px;
+            background-color: black; border: 20px;
+            border-radius: 15px;
+            margin-top: 200px;
+            margin-left: 500px;
+            
+
+        }
+        h2{
+            color: antiquewhite;
+            text-align: center;
+            font-size: 35px;
+            padding-top: 10px;
+        }
+        label {
+            color:wheat;
+            text-align: center;
+            padding-left: 30px;
+            
+        }
+        form label input{
+            margin: 20px;
+            
+        }
+        .submit{
+            margin-left: 180px;
+            margin-top: 20px;
+            height: 50px;
+            width: 150px;
+            border: 20px;
+            border-radius: 25px;
+
+        }
+        #hi{
+              margin: 15px;
+              width: 450px;
+              height: 30px;
+              border: 20px;
+              border-radius: 15px;
+        }
+    </style>
+</head>
+<body ng-app="myapp">
+    <div>
+    <h2>Contact Form</h2>
+    <form action="/submit_form" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="hi" name="name" required><br>
+        
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="hi" name="phone" required><br>
+        
+        <label for="address">Address:</label><br>
+        <textarea id="hi" name="address" required></textarea><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="hi" name="email" required><br>
+        
+        <input class="submit" type="submit" value="submit">
+    </form>
+
+
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js">
+    </script>
+       
+        <div1 ng-controller="myctrl1">
+
+        <button ng-click="submit" >submit </button>
+
+
+    </script>
+</body>
+</html>
